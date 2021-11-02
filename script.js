@@ -49,7 +49,7 @@ function underAgeValidate(underAgeCheck){
      	return true;
 
     } else {
-        errorAge.innerHTML = "<span>Please enter a valid date</span>"
+        errorAge.innerHTML = "<span>You need to be over 18 years old, please enter a valid date</span>"
         errorAge.classList.add('error-msg')
         return false
     }    
