@@ -1,0 +1,27 @@
+.error-msg {
+    color:rgb(255, 0, 0);
+    font-size: 0.8rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    margin-top: 0;
+}
+
+.error-msg-form {
+    display: flex;
+    justify-content: center;
+    color:rgb(255, 0, 0);
+    font-size: 0.7rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    margin-top: 0;
+}
+
+.form-info-text-big {
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.form-info-text-small {
+    font-weight: 400;
+    font-size: 0.9rem;
+}
