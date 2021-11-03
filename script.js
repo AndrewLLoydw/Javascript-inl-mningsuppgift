@@ -1,7 +1,4 @@
-// Variables
-
-
-// Function validate firstname
+// Function validate firstname, min 2 characters
 
 function validateFirstName(firstName){
     const errorFirstName = document.getElementById('errorFirstName')
@@ -17,9 +14,9 @@ function validateFirstName(firstName){
     }
 }
 
-// Function validate firstname
+// Function validate firstname end
 
-// Function validate lastname
+// Function validate lastname, min characters
 
 function validateLastName(lastName) {
     const errorLastName = document.getElementById('errorLastName')
@@ -34,9 +31,9 @@ function validateLastName(lastName) {
     }
 }
 
-// Function validate lastname
+// Function validate lastname end
 
-// Function validate age
+// Function validate age, over 18 years - not older than 150 years
 
 function underAgeValidate(underAgeCheck){
 	const checkFormat = underAgeCheck.replace(/-/g, "/");
@@ -55,9 +52,9 @@ function underAgeValidate(underAgeCheck){
     }    
 }
 
-// Function validate age
+// Function validate age end
 
-// Function validate address
+// Function validate address, min 2 characters
 
 function validateAddress(address) {
     const errorAddress = document.getElementById('errorAddress')
@@ -73,9 +70,9 @@ function validateAddress(address) {
     }
 }
 
-// Function validate address
+// Function validate address ebd
 
-// Function validate city
+// Function validate city, min 2 characters
 
 function validateCity(city) {
     if(city.length > 1) {
@@ -89,9 +86,9 @@ function validateCity(city) {
     }
 }
 
-// Function validate city
+// Function validate city end
 
-// Function validate zip code
+// Function validate zip code, min 5 characters
 
 function validateZipCode(zipCode) {
     if(zipCode.length === 5) {
@@ -105,9 +102,9 @@ function validateZipCode(zipCode) {
     }
 }
 
-// Function validate zip code
+// Function validate zip code end
 
-// Function validate email
+// Function validate email, must be a valid regEx email
 
 function validateEmailAddress(email) {
     const regEx = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -124,9 +121,9 @@ function validateEmailAddress(email) {
     }
 }
 
-// Function validate email
+// Function validate email end
 
-// Function validate password
+// Function validate password, uppercase letter, lowercase letter, number and 8 characters minimum
 
 function validatePassword(password) {
     const regEx = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{8,}$/
@@ -143,7 +140,7 @@ function validatePassword(password) {
     }
 }
 
-// Function validate password
+// Function validate password end
 
 // Function to check password match
 
@@ -163,7 +160,7 @@ function validateConfirmPassword() {
     }
 }
 
-// Function to check password match
+// Function to check password match end
 
 // Switch for loop
 
@@ -185,7 +182,7 @@ function onSubmit(e) {
 
             case 'ageCheck':
                 errors[2] = underAgeValidate(element.value)
-                console.log(underAgeValidate(element.value))
+                // console.log(underAgeValidate(element.value))
                 break;
 
             case 'address':
@@ -224,9 +221,10 @@ function onSubmit(e) {
         alert('You have created an account, welcome!')
         return true
     } else
+        console.log(false)
         document.getElementById('errorForm').innerHTML = "<h3>Please fill out all fields!</h3>"
         return false
 
 }
 
-// Switch for loop
+// Switch for loop end
