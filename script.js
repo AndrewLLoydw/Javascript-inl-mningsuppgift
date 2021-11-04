@@ -88,7 +88,7 @@ function validateCity(city) {
 
 // Function validate city end
 
-// Function validate zip code, min 5 characters
+// Function validate zip code, 5 characters
 
 function validateZipCode(zipCode) {
     if(zipCode.length === 5) {
@@ -96,7 +96,7 @@ function validateZipCode(zipCode) {
         return true
 
     }else {
-        errorZipCode.innerHTML = "<span>Please enter your zip code with atleast 5 numbers</span>"
+        errorZipCode.innerHTML = "<span>Please enter your zip code with 5 characters</span>"
         errorZipCode.classList.add('error-msg')
         return false
     }
