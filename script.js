@@ -219,7 +219,7 @@ function onSubmit(e) {
         console.log(true)
         document.getElementById('errorForm').innerHTML = ""
         alert('You have created an account, welcome!')
-        window.location.replace('http://127.0.0.1:5500/index.html');
+        // window.location.replace('http://127.0.0.1:5500/index.html');
         return true
     } else
         console.log(false)
